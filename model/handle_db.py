@@ -51,6 +51,6 @@ db = HandleDB()
 # print(db.get_all())
 
 
-# Get a user
+# Get a user test
 
 # print(db.get_only("Greyvic"))
