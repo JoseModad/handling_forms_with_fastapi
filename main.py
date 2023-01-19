@@ -9,3 +9,14 @@ template = Jinja2Templates(directory = "./view")
 @app.get("/")
 def root(req: Request):
     return template.TemplateResponse("index.html", {"request": req})
+
+
+@app.get("/signup")
+def signup(req: Request):
+    return template.TemplateResponse("signup.html", {"request": req})
+
+
+@app.get("/user")
+def user(req: Request):
+    return template.TemplateResponse("user.html", {"request": req})
+
